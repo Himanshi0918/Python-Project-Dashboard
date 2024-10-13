@@ -11,7 +11,7 @@ st.title('Imports and Exports Data Dashboard')
 
 # Load the dataset
 data1 = pd.read_csv("Imports_Exports_Dataset.csv")
-data=data.sample(n=3001,random_state=55012)
+data=data1.sample(n=3001,random_state=55012)
 # Handle missing data (optional, based on the file)
 data = data.dropna(subset=['Country', 'Product', 'Import_Export', 'Category', 'Shipping_Method', 'Supplier', 'Payment_Terms'])
 
